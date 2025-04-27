@@ -2,10 +2,10 @@ import uvicorn
 from mcp_setup import main
 from pydantic import BaseModel
 
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 from fastapi import FastAPI, Body
 
-load_dotenv(override=True)
+# load_dotenv(override=True)
 
 class MessageRequest(BaseModel):
     message: str
